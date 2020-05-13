@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
 /*soft reset css*/
 *{
     margin: 0px;
@@ -10,6 +13,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     font-size: 12px;
+    color: whitesmoke;
+    font-family: 'Cousine', monospace;
 }
 
 /* Resolução para desktop e afins */
@@ -31,12 +36,14 @@ body{
 }
 
 /*BreakPoint*/
-@media(min-width: 1200px){
+@media(min-width: 801px){
     body{
 
-        font-size: 20px;
-        background-color: deeppink;
+        font-size: 20px;      
     }   
+    .portifolio .grid{
+        grid-template-columns: 360px 360px;
+    }
 }
 
 header{
@@ -84,13 +91,34 @@ a:hover{
     text-align: center;
 }
 .site-title{
-     
+    font-family: 'Caveat', cursive;
     font-size: 4em;
+    line-height: 1.8em;
 
 }
 
 .site-subtitle{
     font-style: italic;
+    font-family: 'Comfortaa', cursive;
+}
+
+.portifolio h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em;
+    margin-bottom: 1.0em;
+}
+
+.portifolio{
+    padding: 2em;
+}
+
+.portifolio .grid{
+    display: grid;
+    grid-gap: 2em;
+}
+
+.portifolio figure{
+    text-align: center;
 }
 
 .img-portfolio{
