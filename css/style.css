@@ -1,0 +1,99 @@
+/*soft reset css*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://i.pinimg.com/736x/47/fd/13/47fd139f94e7ab41d629d0a83d2a1570.jpg');
+    background-size: auto 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    font-size: 12px;
+}
+
+/* Resolução para desktop e afins */
+
+/*BreakPoint*/
+@media(min-width: 400px){
+    body{
+
+        font-size: 14px;
+    }   
+}
+
+/*BreakPoint*/
+@media(min-width: 600px){
+    body{
+
+        font-size: 18px;
+    }   
+}
+
+/*BreakPoint*/
+@media(min-width: 1200px){
+    body{
+
+        font-size: 20px;
+        background-color: deeppink;
+    }   
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: white;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover{
+
+    text-decoration: underline;
+    color:blue;
+}
+.site-subtitle,
+.site-title{
+    color: whitesmoke;
+    text-align: center;
+}
+.site-title{
+     
+    font-size: 4em;
+
+}
+
+.site-subtitle{
+    font-style: italic;
+}
+
+.img-portfolio{
+    width: 360px;
+    height: 180px;
+}
