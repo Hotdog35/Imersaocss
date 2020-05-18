@@ -5,59 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/123e8b0579.js" crossorigin="anonymous"></script>
     <title>Wanderson</title>
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+            <ul class="container">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portifolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="title">
             <h1 class="site-title">Wanderson Araujo </h1>
             <h2 class="site-subtitle">web developer</h2>
-        </div>   
+        </div>
     </header>
-    <section class="portifolio">
+    <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+        <figure class="profile">
+            <img src="https://scontent.fvix1-1.fna.fbcdn.net/v/t1.0-9/84484283_483210255922942_8532283928885592064_n.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_oc=AQlXd7QeFPBD20Am2yKlY3ANyEVzoFEkzqSEk90FUIBaFyB8xZWXjtX-tnwUn_KFzET25O-5xDSPWCc8eUGn6dvM&_nc_ht=scontent.fvix1-1.fna&oh=e32e332296a1f0358ed92e30aab66759&oe=5EE4ECAD"
+                alt="">
+        </figure>
+        <p style="text-decoration: italic; font-size: 0.5em;">Este site foi construido durante o curso do <a
+                href="https://www.alura.com.br/">imersãocss da alura</a>
+            Graças a esse curso pude aprofundar meus conhecimentos em css, e Melhorar meu desenvolvimento.</p>
+    </section>
+    <section class="portifolio container" id="portifolio">
         <h2>Portfólio</h2>
         <div class="grid">
-	        <figure>
-	            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-	            <figcaption>eCommerce</figcaption>
-	        </figure>
-	        <figure>
-	            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-	            <figcaption>Mobile</figcaption>
-	        </figure>
-	        <figure>
-	            <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-	            <figcaption>Web design</figcaption>
-	        </figure>
-	        <figure>
-	            <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-	                alt="Projetos pessoais">
-	            <figcaption>Projetos pessoais</figcaption>
-	        </figure>
-	    </div>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+                            alt="eCommerce">
+                        <figcaption>eCommerce</figcaption>
+                    </figure>
+                    <div class="card-back">parte de trás 01</div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+                        <figcaption>Mobile</figcaption>
+                    </figure>
+                    <div class="card-back">parte de trás 01</div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
+                            alt="Web design">
+                        <figcaption>Web design</figcaption>
+                    </figure>
+                    <div class="card-back">parte de trás 01</div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+                            alt="Projetos pessoais">
+                        <figcaption>Projetos pessoais</figcaption>
+                    </figure>
+                    <div class="card-back">parte de trás 01</div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="contato">
+    <section class="contato container" id="contato">
         <h2>Contato</h2>
         <div class="grid icons">
             <a target="_blank" href="https://github.com/vanessametonini">
-                Github
+                <i class="fab fa-github"></i>
             </a>
             <a target="_blank" href="https://twitter.com/vanessametonini">
-                twitter
+                <i class="fab fa-instagram"></i>
             </a>
             <a target="_blank" href="https://linkedin.com/in/vanessametonini">
-                linkedin
+                <i class="fab fa-linkedin"></i>
             </a>
             <a href="mailto:vanessa.tonini@caelum.com.br">
-                email
+                <i class="fas fa-envelope-square"></i>
             </a>
         </div>
     </section>
